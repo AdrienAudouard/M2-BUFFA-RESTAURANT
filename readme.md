@@ -11,7 +11,7 @@ cd server && npm install
 
 ### Lancer le projet
 
-Pour lancer le projet il faut 3 terminal
+Pour lancer le projet il faut lancer 3 terminaux
 
 ### Terminal 1
 

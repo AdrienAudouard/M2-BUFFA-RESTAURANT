@@ -30,3 +30,8 @@ cd server && node serverCrudWithMongo
 ```
 cd front && npm start
 ```
+## Problème MONGODB MACOS 10.15
+
+Si des problèmes de droits apparaissent au lancement de mongod sur macOS 10.15, lancer la commande:
+```
+mongod --dbpath /Users/adrien/db-mongo

@@ -49,7 +49,7 @@ class App extends React.Component {
 
   render() {
     const { count, filter, addAsked } = this.state;
-    console.log('hello');
+
     return (
       <div className="App">
         <TopBar count={count} onFilterChange={(f) => this.handleFilterChange(f)} onAddAsked={() => this.handleAddAsked()}/>

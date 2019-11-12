@@ -10,6 +10,7 @@ import TablePagination from "@material-ui/core/TablePagination";
 import RestaurantLine from "./restaurant-line";
 import RestaurantProvider from "../providers/restaurant-provider";
 import RestaurantAddLine from "./restaurant-add-line";
+import TableFooter from "@material-ui/core/TableFooter";
 
 const styles = theme => ({
   root: {
@@ -95,7 +96,7 @@ class RestaurantsTable extends React.Component{
     return(
       <Paper className={classes.root}>
         <div className={classes.tableWrapper}>
-          <Table stickyHeader aria-label="sticky table">
+          <Table stickyHeader aria-label="custom pagination table">
             <TableHead>
               <TableRow>
                 {columns.map(column => (
@@ -121,6 +122,10 @@ class RestaurantsTable extends React.Component{
           count={count}
           rowsPerPage={pageSize}
           page={page}
+          SelectProps={{
+            inputProps: { 'aria-label': 'rows per page' },
+            native: true,
+          }}
           backIconButtonProps={{
             'aria-label': 'previous page',
           }}
